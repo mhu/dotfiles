@@ -1,0 +1,14 @@
+{
+    "editor.cursorBlinking": "phase",
+    "editor.fontLigatures": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.tokenColorCustomizations": {
+        "comments": "#D74E49"
+    },
+    "explorer.autoReveal": false,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.wrapTabs": true,
+    "workbench.startupEditor": "none"
+}
