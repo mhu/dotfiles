@@ -1,0 +1,10 @@
+set title
+set number
+set relativenumber
+set nowrap
+set autoindent
+set expandtab
+set softtabstop=4
+set tabstop=4
+set shiftwidth=4
+set list

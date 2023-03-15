@@ -1,5 +1,5 @@
 # env
-export EDITOR=nano
+export EDITOR=nvim
 export VISUAL=$EDITOR
 
 # aliases
