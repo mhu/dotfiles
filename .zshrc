@@ -22,3 +22,7 @@ function git_branch() {
 autoload -U colors && colors
 PROMPT='%F{yellow}%~%f $(git_branch)%F{cyan}›%f '
 RPROMPT='%F{red}%?%f'
+
+# enable word skipping with Ctrl + left and right arrow keys
+bindkey '\e[1;5D' backward-word
+bindkey '\e[1;5C' forward-word
