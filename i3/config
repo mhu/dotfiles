@@ -186,11 +186,13 @@ bar {
 }
 
 # custom
-bindsym $mod+q exec qqr
+bindsym $mod+F1 exec qqr
+bindsym $mod+F9 exec systemctl suspend
+bindsym $mod+F8 exec i3lock --color 2e3440
 focus_follows_mouse no
 hide_edge_borders both
-gaps inner 10px
-gaps outer 10px
+#gaps inner 10px
+#gaps outer 10px
 
 # class        border  backgr. text    indicator child_border
-client.focused #4c9957 #2d5433 #ffffff #2ef44c   #287734
+client.focused #434c5e #2e3440 #ffffff #4c566a   #3b4252
