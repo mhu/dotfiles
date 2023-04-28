@@ -3,9 +3,8 @@ autoload -Uz compinit
 compinit
 
 # aliases
-alias history='history | less'
 alias cdtemp='cd $(mktemp -d)'
-alias ll='ls -alv --color=auto'
+alias ll='exa -al'
 alias mkdir='mkdir -pv'
 alias reload='source ~/.zshrc'
 alias rm='rm -i'
