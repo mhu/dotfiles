@@ -26,3 +26,9 @@ RPROMPT='%F{#BF616A}%?%f'
 # enable word skipping with Ctrl + left and right arrow keys
 bindkey '\e[1;5D' backward-word
 bindkey '\e[1;5C' forward-word
+
+function cd_fzf() {
+    cd $(find ~ -type d -print | fzf --height=20)
+}
+zle -N cd_fzf
+bindkey '^f' cd_fzf
