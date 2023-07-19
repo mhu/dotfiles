@@ -4,6 +4,7 @@ compinit
 
 # aliases
 alias cdtemp='cd $(mktemp -d)'
+alias fzff='fzf --preview="cat {}"'
 alias ll='exa -al'
 alias mkdir='mkdir -pv'
 alias reload='source ~/.zshrc'
@@ -33,3 +34,11 @@ function cd_fzf() {
 }
 zle -N cd_fzf
 bindkey '^f' cd_fzf
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
