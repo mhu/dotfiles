@@ -1,14 +1,28 @@
 {
-    "editor.cursorBlinking": "phase",
-    "editor.fontLigatures": false,
-    "editor.minimap.renderCharacters": false,
-    "editor.tokenColorCustomizations": {
-        "comments": "#D74E49"
-    },
-    "explorer.autoReveal": false,
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.wrapTabs": true,
-    "workbench.startupEditor": "none"
+  "editor.cursorBlinking": "phase",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontLigatures": false,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.insertSpaces": true,
+  "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.rulers": [80],
+  "editor.tabSize": 4,
+  "editor.tokenColorCustomizations": {
+    "comments": "#D74E49"
+  },
+  "explorer.autoReveal": false,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  },
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.wrapTabs": true,
+  "workbench.startupEditor": "none"
 }
