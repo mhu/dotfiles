@@ -12,10 +12,10 @@ NIXPKGS_ALLOW_UNFREE=1 nix-env -iA nixpkgs.android-studio \
     nixpkgs.firefox \
     nixpkgs.fzf \
     nixpkgs.git \
-    nixpkgs.go \
     nixpkgs.hugo \
     nixpkgs.i3 \
     nixpkgs.nettools \
+    nixpkgs.node \
     nixpkgs.obsidian \
     nixpkgs.parallel \
     nixpkgs.python3 \

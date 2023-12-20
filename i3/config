@@ -197,4 +197,4 @@ gaps inner 10px
 
 client.focused #434c5e #2e3440 #ffffff #4c566a   #3b4252
 
-exec --no-startup-id "feh --bg-fill /home/m/Pictures/wallpapers/sau-end-of-the-line-2.jpg"
+exec --no-startup-id ~/.fehbg

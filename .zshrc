@@ -7,6 +7,7 @@ alias cdtemp='cd $(mktemp -d)'
 alias fzff='fzf --preview="cat {}"'
 alias ll='exa -al'
 alias mkdir='mkdir -pv'
+alias nix-list="nix-env -qa --installed '*'"
 alias nix-update="nix-channel --update && nix-env -iA$1"
 alias reload='source ~/.zshrc'
 alias rm='rm -i'
@@ -36,6 +37,8 @@ function cd_fzf() {
 zle -N cd_fzf
 bindkey '^f' cd_fzf
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# save history
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory
