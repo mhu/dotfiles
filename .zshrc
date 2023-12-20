@@ -7,6 +7,7 @@ alias cdtemp='cd $(mktemp -d)'
 alias fzff='fzf --preview="cat {}"'
 alias ll='exa -al'
 alias mkdir='mkdir -pv'
+alias nix-update="nix-channel --update && nix-env -iA$1"
 alias reload='source ~/.zshrc'
 alias rm='rm -i'
 

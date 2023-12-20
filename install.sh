@@ -6,6 +6,7 @@ sh <(curl -L https://nixos.org/nix/install) --daemon
 NIXPKGS_ALLOW_UNFREE=1 nix-env -iA nixpkgs.android-studio \
     nixpkgs.curl \
     nixpkgs.discord \
+    nixpkgs.docker \
     nixpkgs.exa \
     nixpkgs.feh \
     nixpkgs.firefox \
@@ -17,6 +18,7 @@ NIXPKGS_ALLOW_UNFREE=1 nix-env -iA nixpkgs.android-studio \
     nixpkgs.nettools \
     nixpkgs.obsidian \
     nixpkgs.parallel \
+    nixpkgs.python3 \
     nixpkgs.signal-desktop \
     nixpkgs.spotify \
     nixpkgs.vscode \

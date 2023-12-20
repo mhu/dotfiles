@@ -24,5 +24,6 @@
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.enablePreview": false,
   "workbench.editor.wrapTabs": true,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "extensions.ignoreRecommendations": true
 }
