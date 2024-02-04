@@ -1,6 +1,12 @@
 {
   "editor.cursorBlinking": "phase",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
   "editor.fontLigatures": false,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
@@ -21,9 +27,9 @@
     "markdown": true,
     "scminput": false
   },
-  "workbench.colorTheme": "Default Dark+",
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.wrapTabs": true,
+  "workbench.editor.enablePreview": true,
+  "explorer.openEditors.visible": 1,
+  "workbench.editor.showTabs": "none",
   "workbench.startupEditor": "none",
   "extensions.ignoreRecommendations": true
 }

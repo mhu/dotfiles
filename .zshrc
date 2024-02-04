@@ -7,10 +7,11 @@ alias cdtemp='cd $(mktemp -d)'
 alias fzff='fzf --preview="cat {}"'
 alias ll='exa -al'
 alias mkdir='mkdir -pv'
-alias nix-list="nix-env -qa --installed '*'"
-alias nix-update="nix-channel --update && nix-env -iA$1"
 alias reload='source ~/.zshrc'
 alias rm='rm -i'
+alias python='python3'
+alias code='flatpak run com.visualstudio.code'
+alias obsidian='flatpak run md.obsidian.Obsidian'
 
 # prompt
 autoload -U colors && colors
@@ -18,8 +19,9 @@ setopt PROMPT_SUBST
 
 function git_branch() {
     local branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+
     if [ -n "$branch" ]; then
-        echo "%F{#81A1C1}$branch%f "
+        echo "[%F{#81A1C1}$branch%f] "
     fi
 }
 
