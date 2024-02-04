@@ -2,42 +2,9 @@
 autoload -Uz compinit
 compinit
 
-# aliases
-alias cdtemp='cd $(mktemp -d)'
-alias fzff='fzf --preview="cat {}"'
-alias ll='exa -al'
-alias mkdir='mkdir -pv'
-alias reload='source ~/.zshrc'
-alias rm='rm -i'
-alias python='python3'
-alias code='flatpak run com.visualstudio.code'
-alias obsidian='flatpak run md.obsidian.Obsidian'
-
-# prompt
-autoload -U colors && colors
-setopt PROMPT_SUBST
-
-function git_branch() {
-    local branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
-
-    if [ -n "$branch" ]; then
-        echo "[%F{#81A1C1}$branch%f] "
-    fi
-}
-
-PROMPT='%F{#5E81AC}%~%f $(git_branch)%F{#88C0D0}›%f '
-RPROMPT='%F{#BF616A}%?%f'
-
-# enable word skipping with Ctrl + left and right arrow keys
-bindkey '\e[1;5D' backward-word
-bindkey '\e[1;5C' forward-word
-
-function cd_fzf() {
-    cd $(find ~ -type d -print | fzf --height=20)
-    zle reset-prompt
-}
-zle -N cd_fzf
-bindkey '^f' cd_fzf
+source ~/code/dotfiles/aliases.sh
+source ~/code/dotfiles/prompt.sh
+source ~/code/dotfiles/custom_functions.sh
 
 # save history
 HISTFILE=~/.histfile
