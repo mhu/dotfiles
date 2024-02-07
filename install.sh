@@ -5,8 +5,13 @@ sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Install applications
-sudo apt install -y curl exa feh fzf git hugo i3 inkscape parallel polybar zsh
+sudo apt install -y curl docker-compose exa feh fzf git hugo i3 inkscape parallel polybar zsh
 flatpak install -y flathub com.visualstudio.code com.discordapp.Discord org.signal.Signal com.spotify.Client md.obsidian.Obsidian
+
+# Docker config
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
 
 # Set up zsh
 chsh -s /bin/zsh
