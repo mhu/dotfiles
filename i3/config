@@ -179,8 +179,10 @@ mode "resize" {
 
 # custom
 bindsym $mod+q kill
-bindsym $mod+F8 exec i3lock --color 2e3440
+bindsym $mod+F8 exec i3lock -i $HOME/Pictures/wallpapers/lockscreen.png
 bindsym $mod+F9 exec systemctl suspend
+bindsym $mod+Shift+f floating toggle
+bindsym $mod+r mode "resize"
 
 focus_follows_mouse no
 hide_edge_borders both
