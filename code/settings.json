@@ -19,17 +19,11 @@
     "comments": "#D74E49"
   },
   "explorer.autoReveal": false,
+  "explorer.openEditors.visible": 1,
+  "extensions.ignoreRecommendations": true,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": true,
-    "scminput": false
-  },
   "workbench.editor.enablePreview": true,
-  "explorer.openEditors.visible": 1,
   "workbench.editor.showTabs": "none",
-  "workbench.startupEditor": "none",
-  "extensions.ignoreRecommendations": true
+  "workbench.startupEditor": "none"
 }
