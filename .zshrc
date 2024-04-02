@@ -11,3 +11,5 @@ setopt appendhistory
 source ~/code/dotfiles/aliases.sh
 source ~/code/dotfiles/prompt.sh
 source ~/code/dotfiles/custom_functions.sh
+
+export PATH="$PATH:/usr/local/bin/zig"

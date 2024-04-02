@@ -177,6 +177,10 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+bar {
+        status_command i3status
+}
+
 # custom
 bindsym $mod+q kill
 bindsym $mod+F8 exec i3lock -i $HOME/Pictures/wallpapers/lockscreen.png
@@ -191,4 +195,4 @@ gaps inner 10px
 client.focused #434c5e #2e3440 #ffffff #4c566a   #3b4252
 
 exec --no-startup-id ~/.fehbg
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# exec_always --no-startup-id $HOME/.config/polybar/launch.sh
