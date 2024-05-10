@@ -1,11 +1,18 @@
 {
   "editor.cursorBlinking": "phase",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "esbenp.prettier-vsde",
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.fontLigatures": false,
   "editor.formatOnSave": true,
@@ -25,5 +32,22 @@
   "files.trimTrailingWhitespace": true,
   "workbench.editor.enablePreview": true,
   "workbench.editor.showTabs": "none",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "go": false,
+    "rust": false,
+    "zig": false,
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Tokyo Night",
+  "zig.initialSetupDone": true,
+  "zig.path": "/home/m/zig/zig",
+  "zig.zls.path": "/home/m/.var/app/com.visualstudio.code/config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+  "zig.zls.enableInlayHints": false
 }
