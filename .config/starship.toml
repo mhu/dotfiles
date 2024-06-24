@@ -1,0 +1,52 @@
+add_newline = false
+format = "$python$directory$git_branch$git_status$git_state "
+right_format = "$cmd_duration$status"
+palette = "catppuccin"
+
+[python]
+format = '\($virtualenv\) '
+
+[directory]
+format = "[$path]($style)"
+style = "rosewater"
+truncation_length = 0
+truncate_to_repo = false
+repo_root_style = "bold rosewater"
+
+[git_branch]
+format = "│ [$branch]($style)"
+style = "green"
+
+[git_status]
+format = "[$deleted](red)[$conflicted](red)[$modified](yellow)[$untracked](blue)$ahead$behind"
+deleted = " ✘${count}"
+conflicted = " =${count}"
+modified = " !${count}"
+untracked = " ?${count}"
+ahead = " ⇡${count}"
+behind = " ⇣${count}"
+
+[cmd_duration]
+format = "[$duration]($style) "
+
+[status]
+format = "$status $symbol"
+success_symbol = "✔"
+symbol = "✘"
+disabled = false
+
+[palettes.catppuccin]
+rosewater = "#dc8a78"
+flamingo = "#dd7878"
+pink = "#ea76cb"
+mauve = "#8839ef"
+red = "#d20f39"
+maroon = "#e64553"
+peach = "#fe640b"
+yellow = "#df8e1d"
+green = "#a6d189"
+teal = "#179299"
+sky = "#04a5e5"
+sapphire = "#209fb5"
+blue = "#1e66f5"
+lavender = "#7287fd"
