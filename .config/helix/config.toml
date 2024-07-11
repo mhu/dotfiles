@@ -4,3 +4,6 @@ theme = "tokyonight"
 line-number = "relative"
 mouse = false
 scroll-lines = 0
+
+[editor.file-picker]
+hidden = false
