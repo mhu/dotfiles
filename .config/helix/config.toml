@@ -1,9 +1,14 @@
 theme = "tokyonight"
 
 [editor]
+auto-pairs = false
+cursorline = true
 line-number = "relative"
 mouse = false
 scroll-lines = 0
 
 [editor.file-picker]
 hidden = false
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
