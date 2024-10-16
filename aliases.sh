@@ -1,6 +1,6 @@
 alias cdtemp='cd $(mktemp -d)'
 alias fzff='fzf --preview="cat {}"'
-alias ll='exa -al'
+alias ll='ls -al'
 alias mkdir='mkdir -pv'
 alias reload='source ~/.zshrc'
 alias rm='rm -i'
