@@ -1,0 +1,20 @@
+[user]
+	name = mhu
+
+[core]
+	editor = hx
+
+[push]
+	default = current
+
+[remote]
+	pushDefault = origin
+
+[commit]
+	verbose = true
+
+[init]
+	defaultBranch = test
+
+[pull]
+	rebase = true
