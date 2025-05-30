@@ -1,4 +1,4 @@
-theme = "tokyonight"
+theme = "gruvbox_dark_hard"
 
 [editor]
 auto-pairs = false
@@ -12,3 +12,6 @@ hidden = false
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
+
+[keys.insert]
+C-space = ["completion"]
