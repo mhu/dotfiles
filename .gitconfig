@@ -14,7 +14,7 @@
 	verbose = true
 
 [init]
-	defaultBranch = test
+	defaultBranch = main
 
 [pull]
 	rebase = true

@@ -6,11 +6,12 @@ flameshot
 fzf
 git
 go
-hx
+helix
 i3
 jq
 ngrok
 obsidian
+oh-my-posh
 p10k
 stow
 tailscale
