@@ -9,6 +9,7 @@ go
 helix
 i3
 jq
+lazygit
 ngrok
 obsidian
 oh-my-posh
@@ -16,6 +17,7 @@ p10k
 stow
 tailscale
 tldr
+ulauncher
 wormhole
 zsh
 zoxide
