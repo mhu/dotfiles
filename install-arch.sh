@@ -9,7 +9,7 @@ then
   cd ../
 fi
 
-sudo pacman -S fzf git go helix i3 lazygit magic-wormhole stow tailscale tldr zoxide zsh --noconfirm
+sudo pacman -S fzf git go helix i3 kitty lazygit magic-wormhole stow tailscale tldr zoxide zsh extra/sourcecodepro-nerd --noconfirm
 yay -S deezer --noconfirm
 
 stow .
