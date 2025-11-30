@@ -10,6 +10,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory
 
+export TERMINAL=kitty
 export VISUAL=helix
 export EDITOR=helix
 
