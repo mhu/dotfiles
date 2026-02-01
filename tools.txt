@@ -8,6 +8,7 @@ i3
 jq
 kitty
 lazygit
+less
 magic-wormhole
 sourcecodepro-nerd
 stow
