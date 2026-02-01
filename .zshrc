@@ -27,7 +27,7 @@ alias history='history 1'
 alias open='xdg-open'
 alias lg='lazygit'
 
-xset r rate 200
+exec --no-startup-id xset r rate 200
 
 eval "$(zoxide init zsh --cmd cd)"
 

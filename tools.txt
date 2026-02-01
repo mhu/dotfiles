@@ -14,5 +14,6 @@ stow
 tailscale
 tldr
 wget
+xorg-xset
 zoxide
 zsh
