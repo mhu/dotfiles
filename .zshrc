@@ -20,8 +20,6 @@ alias history='history 1'
 alias open='xdg-open'
 alias lg='lazygit'
 
-exec --no-startup-id xset r rate 200
-
 eval "$(zoxide init zsh --cmd cd)"
 
 bindkey "^[[3~" delete-char
