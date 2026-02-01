@@ -20,6 +20,9 @@ alias history='history 1'
 alias open='xdg-open'
 alias lg='lazygit'
 
+autoload -U promptinit; promptinit
+prompt pure
+
 eval "$(zoxide init zsh --cmd cd)"
 
 bindkey "^[[3~" delete-char

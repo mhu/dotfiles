@@ -17,3 +17,4 @@ wget
 xorg-xset
 zoxide
 zsh
+zsh-pure-prompt
