@@ -49,11 +49,16 @@ apply_dotfiles() {
   echo "Dotfiles applied."
 }
 
+set_up_shell() {
+  chsh -s $(which zsh)
+}
+
 main() {
   check_os
   clone_dotfiles
   install_packages
   apply_dotfiles
+  set_up_shell
 }
 
 main

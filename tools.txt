@@ -1,5 +1,6 @@
 curl
 deezer
+firefox
 fzf
 git
 go
