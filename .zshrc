@@ -10,6 +10,7 @@ export EDITOR=helix
 alias cdtemp='cd $(mktemp -d)'
 alias hx='helix'
 alias ll='ls -ahl'
+alias lll='ls -ahlt'
 alias mkdir='mkdir -pv'
 alias rm='rm -i'
 alias gs='git status'
