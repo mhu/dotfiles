@@ -11,6 +11,11 @@ kitty
 lazygit
 less
 magic-wormhole
+mullvad-vpn
+obsidian
+pavucontrol
+pipewire
+pipewire-pulse
 sourcecodepro-nerd
 stow
 tailscale
