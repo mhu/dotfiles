@@ -1,6 +1,6 @@
 set $mod Mod4
 
-font pango:monospace 8
+font pango:monospace 9
 
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -84,4 +84,3 @@ bindsym $mod+F8 exec i3lock
 bindsym $mod+F9 exec systemctl suspend
 focus_follows_mouse no
 hide_edge_borders both
-gaps inner 10px
