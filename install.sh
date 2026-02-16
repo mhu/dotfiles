@@ -2,7 +2,7 @@
 set -eo pipefail
 
 DOTFILES_REPO="https://github.com/mhu/dotfiles.git"
-DOTFILES_DIR="$HOME/.dotfiles"
+DOTFILES_DIR="$HOME/dotfiles"
 
 check_os() {
   if [ ! -f /etc/arch-release ]; then
