@@ -24,6 +24,11 @@ command=echo "CPU: $(top -bn1 | grep "Cpu(s)" | awk '{print $2}')%"
 interval=10
 separator_block_width=20
 
+[cpu_temp]
+command=sensors | awk '/^Tctl:/ {print "Temp: " $2}'
+interval=10
+separator_block_width=20
+
 [memory]
 command=free -g | awk '/^Mem:/ {print "Mem: " $3 "/" $2 " Gi"}'
 interval=10
