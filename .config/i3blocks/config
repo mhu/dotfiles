@@ -1,0 +1,45 @@
+[weather]
+command=curl -Ss 'https://wttr.in/Amsterdam?0&T&Q' | cut -c 16- | head -2 | xargs echo
+interval=1800
+separator_block_width=20
+
+[ip]
+command=ip route get 1.1.1.1 | awk '{print $7; exit}'
+interval=once
+separator_block_width=20
+
+[vpn]
+command=mullvad status | awk '/^Connected/ {connected=1} /Visible location:/ {sub(/.*Visible location:[[:space:]]*/, ""); sub(/,.*/, ""); location=$0} END {if (connected) print "VPN: " location; else print "VPN: OFF"}'
+interval=30
+separator_block_width=20
+
+[volume]
+command=~/.config/i3blocks/volume.sh
+interval=once
+signal=10
+separator_block_width=20
+
+[cpu_usage]
+command=echo "CPU: $(top -bn1 | grep "Cpu(s)" | awk '{print $2}')%"
+interval=10
+separator_block_width=20
+
+[memory]
+command=free -g | awk '/^Mem:/ {print "Mem: " $3 "/" $2 " Gi"}'
+interval=10
+separator_block_width=20
+
+[time_est]
+command=TZ=America/Toronto date '+%H:%M EST'
+interval=5
+separator_block_width=20
+
+[time]
+command=date +%T
+interval=5
+separator_block_width=20
+
+[date]
+command=date '+%a, %Y-%m-%d'
+interval=5
+separator_block_width=20

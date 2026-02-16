@@ -6,6 +6,7 @@ git
 go
 helix
 i3
+i3blocks
 jq
 kitty
 lazygit
